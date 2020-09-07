@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# initial config for machine with zsh
+sudo apt-get -y update
+sudo apt-get -y install curl
+sudo apt-get -y install git
+sudo apt-get -y install valgrind
+sudo apt-get -y install shellcheck
+sudo apt-get install -y python3-pip
+
+# Install zsh and tune up
+sudo apt-get -y install zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+sudo sed -i "s/robbyrussell/miloshadzic/" ~/.zshrc
+
+# Install holberton betty codestyle
+git clone https://github.com/holbertonschool/Betty.git
+sudo sh ./Betty/install.sh

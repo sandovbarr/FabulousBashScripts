@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install anaconda and create a new env python 3.5
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh -O anaconda.sh
+sha256sum anaconda.sh
+bash anaconda.sh
+sh ~/.bashrc
+cat ~/.bashrc | tail -16 >> ~/.zshrc
+conda create --name holb python=3.5
+conda activate holb

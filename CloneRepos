@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+mkdir ~/holbertonschool_projects
+cd ~/holbertonschool_projects
+git clone https://github.com/sandovbarr/holberton-system_engineering-devops.git
+git clone https://github.com/sandovbarr/AirBnB_clone_v2
+git clone https://github.com/sandovbarr/holbertonschool-low_level_programming.git
+git clone https://github.com/sandovbarr/holbertonschool-higher_level_programming.git
